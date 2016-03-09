@@ -17,7 +17,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "myATM-4", "myATM-4\myATM-4.
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "exercise5MedKlass", "exercise5MedKlass\exercise5MedKlass.csproj", "{34FDD9F5-3888-440F-9A37-004D984CF2EE}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "exercise8", "exercise8\exercise8.csproj", "{B26ADD15-A965-4B20-AE64-3C9E86CB1244}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Exercise8", "exercise8\Exercise8.csproj", "{B26ADD15-A965-4B20-AE64-3C9E86CB1244}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Exercise9", "Exercise9\Exercise9.csproj", "{ACF43807-B7D7-4A42-B84F-9A022471CFC1}"
 EndProject
