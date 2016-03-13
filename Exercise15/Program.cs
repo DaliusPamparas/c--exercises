@@ -14,6 +14,8 @@ namespace Exercise15
             
             Dictionary<string, string> dict = new Dictionary<string, string>();
             string sentence = "Hello world and some more words";
+            CountLetters countLetters = new CountLetters(dict, sentence);
+            
 
 
              
