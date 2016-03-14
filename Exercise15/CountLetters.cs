@@ -36,7 +36,7 @@ namespace Exercise15
             return dict;
         }
 
-        internal Dictionary<char, string> Alphabetics(Dictionary<char, string> dict, string sentence)
+        public Dictionary<char, string> Alphabetics(Dictionary<char, string> dict, string sentence)
         {
             foreach (var symbol in sentence)
             {
