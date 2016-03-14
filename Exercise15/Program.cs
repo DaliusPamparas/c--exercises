@@ -12,12 +12,21 @@ namespace Exercise15
         {
 
             
-            Dictionary<string, string> dict = new Dictionary<string, string>();
-            string sentence = "Hello world and some more words";
+            Dictionary<char, string> dict = new Dictionary<char, string>();
+            string sentence = "Hello world and some more words, yes and some words.";
             CountLetters countLetters = new CountLetters(dict, sentence);
-            
+
+            countLetters.AllSymbols(dict, sentence);
+            countLetters.Print(dict);
+
+            dict.Clear();
+            Console.WriteLine("\n\n\n");
+
+            countLetters.Alphabetics(dict, sentence);
+            countLetters.Print(dict);
 
 
+            Console.ReadKey();
              
 
         }

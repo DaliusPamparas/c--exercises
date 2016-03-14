@@ -8,17 +8,61 @@ namespace Exercise15
 {
     class CountLetters
     {
-        private Dictionary<string, string> dict;
+        private Dictionary<char, string> dict;
         private string sentence;
 
-        public CountLetters(Dictionary<string, string> dict)
+        
+
+        public CountLetters(Dictionary<char, string> dict, string sentence)
         {
             this.dict = dict;
+            this.sentence = sentence;
         }
 
-        public CountLetters(Dictionary<string, string> dict, string sentence) : this(dict)
+        public Dictionary<char, string> AllSymbols(Dictionary<char, string> dict, string sentence)
         {
-            this.sentence = sentence;
+            foreach (var symbol in sentence)
+            {
+                
+                if (!dict.ContainsKey(symbol))
+                {
+                    dict.Add(symbol,"*");
+                }
+                else 
+                {
+                    dict[symbol] += "*";
+                }
+            }
+            return dict;
+        }
+
+        internal Dictionary<char, string> Alphabetics(Dictionary<char, string> dict, string sentence)
+        {
+            foreach (var symbol in sentence)
+            {
+                if(symbol != ' ' && symbol != '.' && symbol != '!' && symbol != ',')
+                { 
+                    if (!dict.ContainsKey(symbol))
+                    {
+                        dict.Add(symbol, "*");
+                    }
+                    else
+                    {
+                        dict[symbol] += "*";
+                    }
+                }
+            }
+            return dict;
+        }
+
+        public void Print(Dictionary<char, string> dict)
+        {
+            foreach (var i in  dict)
+            {
+                Console.WriteLine(i);
+
+
+            }
         }
     }
 }
