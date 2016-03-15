@@ -57,9 +57,9 @@ namespace Exercise15
 
         public void Print(Dictionary<char, string> dict)
         {
-            foreach (var i in  dict)
+            foreach (KeyValuePair<char,string> i in  dict)
             {
-                Console.WriteLine(i);
+                Console.WriteLine(i.Key+": "+i.Value);
 
 
             }
