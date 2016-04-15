@@ -26,9 +26,15 @@ namespace Exercise3
                 //skriver genom loop 1+2+3...
                     while (i <= number)
                     {
+                            if(i != number)
+                            { 
                             Console.Write(i + "+");
-                            
-                            sum = sum + i;
+                            }
+                              else
+                                {
+                                  Console.Write(i);
+                             }
+                    sum = sum + i;
                             i++;
                 }
                  //skriver ut summan

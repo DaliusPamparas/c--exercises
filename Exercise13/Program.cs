@@ -32,22 +32,24 @@ namespace Exercise13
             DateTime fromToday = DateTime.Now;
             int thisYear = fromToday.Year;
             DateTime nexBirthDate = new DateTime(thisYear, month, day);
+            
 
             if (nexBirthDate < fromToday)
             {
-                nexBirthDate.AddYears(1);
+                nexBirthDate = nexBirthDate.AddYears(1);
+              
             }
 
             while (fromToday < nexBirthDate)
             {
                 daysToBirtday = daysToBirtday + 1;
-                fromToday.AddDays(1);
+                fromToday = fromToday.AddDays(1);
             }
 
 //
             Console.WriteLine("Hello, " + name + " .\n" + "You are " 
-                + myAge + " years old and will turn age " + (myAge + 1) + " in"+
-               daysToBirtday + "days");
+                + myAge + " years old and will turn age " + (myAge + 1) + " in "+
+               daysToBirtday + " days");
             Console.ReadKey();
           
 
