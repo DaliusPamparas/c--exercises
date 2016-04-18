@@ -12,7 +12,8 @@ namespace Exercise12
         {
             var logger = new Logger();
             var application = new LogApplication(logger);
-            application.Run();
+            application.Run();
+
         }
     }
 }

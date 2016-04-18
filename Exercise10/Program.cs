@@ -20,6 +20,8 @@ namespace Exercise10
 
             data.PrintVehicle(trehjul);
 
+            Console.ReadKey();
+
 
         }
     }
